@@ -1,6 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x+1 Problem Esra Karakaş</title>
+</head>
+<body>
+    <form action="./3x+1.php" method="post">
+        <label for="number"><h2>Please enter a number greater than 1</h2></label>
+        <input type="number" name="number" id="number">
+
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
+
 <?php
-        
-        $x =27;
+    //I have tested most of the numbers in the examples found on Wikipedia and the algorithm I wrote calculates them all correctly.
+    
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $x = $_POST["number"];
         $y = 0;
 
         if($x>1){
@@ -19,4 +38,5 @@
         }else{
             echo "<h3>The number must be greater than 1.</h3><br/>";
         }
+    }  
 ?>
