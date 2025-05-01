@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3x+1 Problem Esra Karakaş</title>
+    <style>
+        input{
+            font-size: 18px;
+            border: 1px dashed orangered;
+            border-radius: 10px;
+            padding: 8px 12px;
+        }
+        button{
+            color: white;
+            background-color: orangered;
+            padding: 8px 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
     <form action="./3x+1.php" method="post">
@@ -24,6 +40,7 @@
 
         if($x>1){
             echo "<h3>Starting 3x+1 algorithm, the number is <span style='color: orangered;'>$x</span> <br/></h3>";
+            echo "";
             while($x>1){
                 if($x%2===0){
                     $x/=2;
